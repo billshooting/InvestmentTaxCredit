@@ -1,0 +1,192 @@
+# =========================================================
+# OS files
+# =========================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================================================
+# Editor / IDE files
+# =========================================================
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+*.rsuser
+
+# Rider
+*.sln.iml
+
+# =========================================================
+# .NET / ASP.NET Core
+# =========================================================
+
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.assets.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Test results
+TestResults/
+*.trx
+coverage/
+coverage.cobertura.xml
+coverage.opencover.xml
+
+# dotCover / ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# =========================================================
+# Frontend / Node.js
+# =========================================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.nuxt/
+.svelte-kit/
+.cache/
+.parcel-cache/
+.vite/
+
+# Frontend env files
+.env
+.env.local
+.env.*.local
+
+# Keep example env files
+!.env.example
+!.env.template
+
+# =========================================================
+# TypeScript / JavaScript
+# =========================================================
+
+*.tsbuildinfo
+
+# ESLint / Stylelint cache
+.eslintcache
+.stylelintcache
+
+# =========================================================
+# Azure / Deployment
+# =========================================================
+
+# Azure Functions local settings may contain secrets
+local.settings.json
+
+# Azure publish profiles may contain credentials
+*.PublishSettings
+*.pubxml
+*.pubxml.user
+
+# Azure deployment artifacts
+.azure/
+azurite/
+__azurite_db*__.json
+__blobstorage__/
+__queuestorage__/
+__tablestorage__/
+
+# Bicep / ARM generated files
+*.bicepparam
+
+# =========================================================
+# Docker
+# =========================================================
+
+.docker/
+docker-compose.override.yml
+
+# =========================================================
+# Logs
+# =========================================================
+
+logs/
+*.log
+
+# =========================================================
+# Secrets / Certificates
+# =========================================================
+
+*.pfx
+*.p12
+*.pem
+*.key
+*.crt
+*.cer
+secrets.json
+appsettings.*.local.json
+appsettings.Local.json
+
+# Keep normal appsettings files if needed
+!appsettings.json
+!appsettings.Development.json
+!appsettings.Production.json
+
+# =========================================================
+# Database / local storage
+# =========================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================================================
+# Misc
+# =========================================================
+
+tmp/
+temp/
+.cache/
