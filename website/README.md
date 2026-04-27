@@ -56,3 +56,7 @@ Deployment settings:
 - Required GitHub secret: `AZURE_STATIC_WEB_APPS_API_TOKEN`
 
 To connect an Azure Static Web Apps resource, copy its deployment token from Azure and save it as the `AZURE_STATIC_WEB_APPS_API_TOKEN` repository secret in GitHub.
+
+Pull requests run install, test, and build checks only. Production deployment runs when changes are merged or pushed to `main`.
+
+If Azure reports `No matching Static Web App was found or the api key was invalid`, re-copy the deployment token from the same Azure Static Web Apps resource that should host this repository. Do not use an Azure subscription key, app registration secret, publish profile, or token from another Static Web App resource.
