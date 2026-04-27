@@ -10,3 +10,38 @@ The website is the primary user interface for tracking and reviewing personal in
 
 The website is written with React and hosted on Azure. Code in this folder should follow React conventions, keep user-facing flows simple and predictable, and communicate clearly with the backend APIs. The interface should support accurate data entry, easy review, and future expansion for additional client ends such as mobile.
 
+## Design Spec
+
+The main design direction is modern and bright. The site should feel clean, organized, and practical for personal finance workflows rather than like a marketing landing page.
+
+- Theme: bright, modern, dashboard-style, and easy to scan.
+- Layout: use clear sections, stable cards, generous spacing, and responsive grids.
+- Colors: prefer a light blue-white base with balanced mint, amber, sky blue, and deep teal accents.
+- Typography: keep headings strong and readable, with no negative letter spacing and no viewport-width font scaling.
+- UI tone: professional, calm, and approachable for personal investment, tax, and credit tracking.
+- Content hierarchy: prioritize practical tracking areas, project status, and next steps over decorative content.
+- Accessibility: preserve semantic headings, landmarks, readable contrast, and mobile-friendly spacing.
+
+## Local Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the local development server:
+
+```bash
+npm run dev
+```
+
+Create a static production build:
+
+```bash
+npm run build
+```
+
+## Azure Deployment
+
+The production build outputs static files to `dist`. This can be deployed to Azure Static Web Apps or another Azure static hosting option. The `staticwebapp.config.json` file keeps client-side routes falling back to `index.html`.
