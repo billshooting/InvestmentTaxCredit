@@ -10,3 +10,5 @@ The backend is responsible for application APIs, data processing, business rules
 
 The backend is powered by .NET Core and hosted on Azure. Code in this folder should follow .NET Core conventions, keep API contracts clear, and keep hosting or deployment settings configurable. Financial, tax, and credit-related logic should be written in a way that is easy to review, test, and audit.
 
+
+
