@@ -1,0 +1,11 @@
+{
+  "name": "Investment Tax Credit Website",
+  "packageName": "investment-tax-credit-website",
+  "version": "0.1.0",
+  "build": "b6207de",
+  "commit": "b6207de759dfe1582c25e199ad5600ba34fadab6",
+  "branch": "codex/website-icon-version",
+  "environment": "static",
+  "status": "deployed",
+  "generatedAt": "2026-04-27T05:22:37.870Z"
+}
