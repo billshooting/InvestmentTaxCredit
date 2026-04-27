@@ -45,3 +45,14 @@ npm run build
 ## Azure Deployment
 
 The production build outputs static files to `dist`. This can be deployed to Azure Static Web Apps or another Azure static hosting option. The `staticwebapp.config.json` file keeps client-side routes falling back to `index.html`.
+
+The GitHub Actions workflow for Azure Static Web Apps is stored at `.github/workflows/azure-static-web-apps.yml`.
+
+Deployment settings:
+
+- App location: `website`
+- API location: empty for now
+- Output location: `dist`
+- Required GitHub secret: `AZURE_STATIC_WEB_APPS_API_TOKEN`
+
+To connect an Azure Static Web Apps resource, copy its deployment token from Azure and save it as the `AZURE_STATIC_WEB_APPS_API_TOKEN` repository secret in GitHub.
