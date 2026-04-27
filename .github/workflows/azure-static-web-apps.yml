@@ -14,10 +14,10 @@ on:
       - main
 
 jobs:
-  build_and_deploy_job:
+  validate_website_job:
     if: github.event_name == 'push' || github.event.action != 'closed'
     runs-on: ubuntu-latest
-    name: Build and Deploy
+    name: Validate Website
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,7 +35,15 @@ jobs:
         working-directory: website
         run: npm run build
 
-      - name: Build and Deploy
+  deploy_website_job:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: validate_website_job
+    runs-on: ubuntu-latest
+    name: Deploy Website
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Deploy to Azure Static Web Apps
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
