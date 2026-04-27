@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "version:generate": "node scripts/generate-version.mjs",
+    "prebuild": "npm run version:generate",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run"
